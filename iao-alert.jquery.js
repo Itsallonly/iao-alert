@@ -1,12 +1,11 @@
 /*
-	Name: iao alert
-	 Key: iao-alert
- Version: 1.0.0
-  Author: Prashant Kapoor
- Website: http://www.itsallonly.com
-    Docs: http://www.itsallonly.com/plugin/jquery/iao-alert
-    Repo: http://www.itsallonly.com/plugin/jquery/iao-alert
-  Issues: http://www.itsallonly.com/plugin/jquery/iao-alert
+        Name: iao alert
+         Key: iao-alert
+     Version: 1.0.0
+      Author: Prashant Kapoor
+     Website: http://www.itsallonly.com
+        Repo: https://github.com/Itsallonly/iao-alert
+      Issues: https://github.com/Itsallonly/iao-alert/issues
   Dependency: Jquery
 */
 (function( $ ) {
