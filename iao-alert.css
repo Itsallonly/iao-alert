@@ -1,7 +1,7 @@
 /*
  Plugin Name: iao alert
          Key: iao-alert
-     Version: 1.0.2
+     Version: 1.0.3
       Author: Prashant Kapoor
      Website: http://www.itsallonly.com
         Repo: https://github.com/Itsallonly/iao-alert
@@ -19,6 +19,22 @@ iao-alert-box {
 	box-sizing: border-box;
 	max-width: 500px;
 	overflow: auto;
+}
+iao-alert-box[position='top-left'] {
+	right: auto;
+	left: 0
+}
+iao-alert-box[position='bottom-left'] {
+	right: auto;
+	left: 0;
+	top: auto;
+	bottom: 0;
+}
+iao-alert-box[position='bottom-right'] {
+	right: 0;
+	left: auto;
+	top: auto;
+	bottom: 0;
 }
 iao-alert {
 	display: block;
@@ -62,6 +78,12 @@ iao-alert-close {
     cursor: pointer;
     top: calc(50% - 10px);
     z-index: 1;
+}
+iao-alert[fade-on-hover='true']:hover{
+	opacity: 0.5;
+}
+iao-alert[close-on-click='true'] {
+	cursor: pointer;
 }
 iao-alert[type='success'] {
 	color: #34a853;
