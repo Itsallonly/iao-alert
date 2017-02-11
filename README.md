@@ -188,7 +188,7 @@ _SYNTAX_ -<br />
 		fadeOnHover: true,
 		position: "bottom-right"
 	});`
-- 'bttom-left'<br />
+- 'bottom-left'<br />
 _SYNTAX_ -<br />
 	`$.iaoAlert({
 		msg: "This is demo iao alert message.",
