@@ -21,7 +21,8 @@
             closeButton: true,
             closeOnClick: false,
             fadeOnHover: true,
-            position: 'top-right'
+            position: 'top-right',
+            zIndex: '999'
         }, arr );
         var timeStamp = $.now();
         var ext = {
@@ -30,7 +31,7 @@
             chkMsg : (opt.msg.indexOf(" "))?'white-space:pre-wrap;word-wrap:break-word;':''
         };
         if($('iao-alert-box').length==0)
-        $('body').append('<iao-alert-box position="top-left"><iao-alert-start></iao-alert-start></iao-alert-box><iao-alert-box position="top-right"><iao-alert-start></iao-alert-start></iao-alert-box><iao-alert-box position="bottom-right"><iao-alert-start></iao-alert-start></iao-alert-box><iao-alert-box position="bottom-left"><iao-alert-start></iao-alert-start></iao-alert-box>');
+        $('body').append('<iao-alert-box position="top-left" style="z-index:'+opt.zIndex+'"><iao-alert-start></iao-alert-start></iao-alert-box><iao-alert-box position="top-right" style="z-index:'+opt.zIndex+'"><iao-alert-start></iao-alert-start></iao-alert-box><iao-alert-box position="bottom-right" style="z-index:'+opt.zIndex+'"><iao-alert-start></iao-alert-start></iao-alert-box><iao-alert-box position="bottom-left" style="z-index:'+opt.zIndex+'"><iao-alert-start></iao-alert-start></iao-alert-box>');
         var iaoAlert = $('<iao-alert id="iao'+timeStamp+'" close-on-click='+opt.closeOnClick+' fade-on-hover='+opt.fadeOnHover+' mode="'+opt.mode+'"type="'+opt.type+'" style="'+ext.chkMsg+'">'+opt.msg+ext.closeOption+'</iao-alert>')
         .insertAfter('iao-alert-box[position="'+ext.chkPosition+'"] > iao-alert-start');
         if(opt.autoHide)
