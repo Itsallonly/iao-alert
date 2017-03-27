@@ -202,3 +202,19 @@ _SYNTAX_ -<br />
 		fadeOnHover: true,
 		position: "bottom-left"
 	});`
+### Layering (z-index)
+BY default iao alert message has the z-index value 999 i.e. standard to bring it to top, still if doesn't come on the top layer of screen custom z-index can be passed using zIndex<br />
+_SYNTAX_ -<br />
+	`$.iaoAlert({
+		msg: "This is demo iao alert message.",
+		type: "success",
+		mode: "dark",
+		autoHide: true,
+		alertTime: "5000",
+		fadeTime: "1000",
+		closeButton: false,
+		closeOnClick: true,
+		fadeOnHover: true,
+		position: "top-right",
+		zIndex: "1000"
+	});`
