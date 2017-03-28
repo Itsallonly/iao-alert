@@ -1,7 +1,7 @@
 /*
  Plugin Name: iao alert
          Key: iao-alert
-     Version: 1.0.5
+     Version: 1.0.6
       Author: Prashant Kapoor
      Website: http://www.itsallonly.com
         Repo: https://github.com/Itsallonly/iao-alert
@@ -22,7 +22,8 @@
             closeOnClick: false,
             fadeOnHover: true,
             position: 'top-right',
-            zIndex: '999'
+            zIndex: '999',
+            roundedCorner: false
         }, arr );
         var timeStamp = $.now();
         var ext = {
@@ -32,7 +33,7 @@
         };
         if($('iao-alert-box').length==0)
         $('body').append('<iao-alert-box position="top-left" style="z-index:'+opt.zIndex+'"><iao-alert-start></iao-alert-start></iao-alert-box><iao-alert-box position="top-right" style="z-index:'+opt.zIndex+'"><iao-alert-start></iao-alert-start></iao-alert-box><iao-alert-box position="bottom-right" style="z-index:'+opt.zIndex+'"><iao-alert-start></iao-alert-start></iao-alert-box><iao-alert-box position="bottom-left" style="z-index:'+opt.zIndex+'"><iao-alert-start></iao-alert-start></iao-alert-box>');
-        var iaoAlert = $('<iao-alert id="iao'+timeStamp+'" close-on-click='+opt.closeOnClick+' fade-on-hover='+opt.fadeOnHover+' mode="'+opt.mode+'"type="'+opt.type+'" style="'+ext.chkMsg+'">'+opt.msg+ext.closeOption+'</iao-alert>')
+        var iaoAlert = $('<iao-alert id="iao'+timeStamp+'" close-on-click='+opt.closeOnClick+' fade-on-hover='+opt.fadeOnHover+' mode="'+opt.mode+'"type="'+opt.type+'" style="'+ext.chkMsg+'" corners="'+(opt.roundedCorner)?('round'):''+'">'+opt.msg+ext.closeOption+'</iao-alert>')
         .insertAfter('iao-alert-box[position="'+ext.chkPosition+'"] > iao-alert-start');
         if(opt.autoHide)
         setTimeout(function(){

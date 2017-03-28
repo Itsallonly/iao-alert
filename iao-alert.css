@@ -1,7 +1,7 @@
 /*
  Plugin Name: iao alert
          Key: iao-alert
-     Version: 1.0.5
+     Version: 1.0.6
       Author: Prashant Kapoor
      Website: http://www.itsallonly.com
         Repo: https://github.com/Itsallonly/iao-alert
@@ -114,4 +114,7 @@ iao-alert[type='warning'][mode='dark'] {
 }
 iao-alert[type='notification'][mode='dark'] {
 	background-color: #4285f4;
+}
+iao-alert[corners='round'] {
+	border-radius: 4px;
 }

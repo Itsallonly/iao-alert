@@ -218,3 +218,19 @@ _SYNTAX_ -<br />
 		position: "top-right",
 		zIndex: "1000"
 	});`
+### Rounded Corners
+BY default iao alert message has sharp corners, it can be made to have rounded corners by setting 'roundedCorners' to true<br />
+_SYNTAX_ -<br />
+	`$.iaoAlert({
+		msg: "This is demo iao alert message.",
+		type: "success",
+		mode: "dark",
+		autoHide: true,
+		alertTime: "5000",
+		fadeTime: "1000",
+		closeButton: false,
+		closeOnClick: true,
+		fadeOnHover: true,
+		position: "top-right",
+		zIndex: "1000"
+	});`
