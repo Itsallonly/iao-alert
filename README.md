@@ -4,7 +4,7 @@ Most flexible Jquery alert plugin with maximum number of customizations availabl
 ## Meta Data
 **Plugin Name**: iao alert<br />
         **Key**: iao-alert<br />
-    **Version**: 1.0.5<br />
+    **Version**: 1.0.6<br />
      **Author**: Prashant Kapoor<br />
     **Website**: http://itsallonly.github.io/iao-alert<br />
        **Repo**: https://github.com/Itsallonly/iao-alert<br />
