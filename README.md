@@ -4,7 +4,7 @@ Most flexible Jquery alert plugin with maximum number of customizations availabl
 ## Meta Data
 **Plugin Name**: iao alert<br />
         **Key**: iao-alert<br />
-    **Version**: 1.0.6<br />
+    **Version**: 1.0.7<br />
      **Author**: Prashant Kapoor<br />
     **Website**: http://itsallonly.github.io/iao-alert<br />
        **Repo**: https://github.com/Itsallonly/iao-alert<br />
@@ -233,4 +233,21 @@ _SYNTAX_ -<br />
 		fadeOnHover: true,
 		position: "top-right",
 		zIndex: "1000"
+	});`
+### Rounded Corners
+BY default iao alert message don't use class attribute, a class can be added by setting 'alertClass' to any custom class<br />
+_SYNTAX_ -<br />
+	`$.iaoAlert({
+		msg: "This is demo iao alert message.",
+		type: "success",
+		mode: "dark",
+		autoHide: true,
+		alertTime: "5000",
+		fadeTime: "1000",
+		closeButton: false,
+		closeOnClick: true,
+		fadeOnHover: true,
+		position: "top-right",
+		zIndex: "1000",
+		alertClass: "alert-class"
 	});`
